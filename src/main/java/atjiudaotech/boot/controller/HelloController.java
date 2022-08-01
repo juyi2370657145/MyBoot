@@ -6,7 +6,9 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import atjiudaotech.boot.bean.Car;
+import lombok.extern.slf4j.Slf4j;
 
+@Slf4j
 @RestController
 public class HelloController {
 
@@ -15,6 +17,7 @@ public class HelloController {
 
 	@RequestMapping("/car")
 	public Car car() {
+		log.info("get car!");
 		return car;
 	}
 
