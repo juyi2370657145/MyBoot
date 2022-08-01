@@ -1,0 +1,19 @@
+person:
+  username: junyi
+  boss: true
+  birth: 2022/8/1
+  age: 18
+  pet:
+    name: 小黑
+    weight: 99.9
+#  interests: [篮球, 足球]
+  interests:
+    - 篮球
+    - 足球
+    - 羽毛球
+  animal: [猫, 狗]
+#  score: {k:v, k2:v}
+  score: {math:88, english:88}
+  salarys:
+    - 9999.01
+    - 42342.44
