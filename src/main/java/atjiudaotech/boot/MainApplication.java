@@ -4,6 +4,7 @@ import java.util.Arrays;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties;
 import org.springframework.context.ConfigurableApplicationContext;
 
 import atjiudaotech.boot.bean.Pet;
@@ -46,11 +47,14 @@ public class MainApplication {
 		DBHelper bean1 = run.getBean(DBHelper.class);
 		System.out.println(bean1);*/
 
-		User user01 = run.getBean("user01", User.class);
+/*		User user01 = run.getBean("user01", User.class);
 		System.out.println(user01);
 
 		System.out.println(run.containsBean("haha"));
-		System.out.println(run.containsBean("hehe"));
+		System.out.println(run.containsBean("hehe"));*/
+
+		String[] beanNamesForType = run.getBeanNamesForType(WebMvcProperties.class);
+		System.out.println(Arrays.toString(beanNamesForType));
 
 	}
 }
